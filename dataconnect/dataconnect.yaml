@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "hereuraxi"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "hereuraxi-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
